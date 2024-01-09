@@ -72,7 +72,6 @@ class Card {
                 <g transform="translate(${this.paddingX}, ${this.hideTitle ? this.paddingY : this.paddingY + this.titleHeight})">
                     ${this.body}
                 </g>
-                <g transform="translate(${this.paddingX}, ${cardSize.height - this.paddingY})"><text x="0" y="15" class="about-text-grey">卡片生成时间：${timeStr}</text></g>
             </svg>`;
     }
 }
