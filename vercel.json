@@ -4,10 +4,23 @@
     { "src": "test/*.js", "use": "@vercel/node"}
   ],
   "routes": [
-    { "src": "/practice", "dest": "/api/practice.js" },
-    { "src": "/guzhi", "dest": "/api/guzhi.js" },
-    { "src": "/about", "dest": "/api/about.js" },
-    { "src": "/test-function", "dest": "/test/test-function.js" },
+    { "src": "/practice", "dest": "/api/practice.js",
+    "headers": {
+        "Access-Control-Allow-Origin": "*"
+      }
+    },
+    { "src": "/guzhi", "dest": "/api/guzhi.js",
+    "headers": {
+        "Access-Control-Allow-Origin": "*"
+      } },
+    { "src": "/about", "dest": "/api/about.js" ,
+    "headers": {
+        "Access-Control-Allow-Origin": "*"
+      }},
+    { "src": "/test-function", "dest": "/test/test-function.js" ,
+    "headers": {
+        "Access-Control-Allow-Origin": "*"
+      }},
     { "src": "/", "status": 301, "headers": { "Location": "https://cyrxdzj.github.io/2021-07-07-HowToUseLuoguCard/" } }
   ],
   "regions": ["hkg1"]
