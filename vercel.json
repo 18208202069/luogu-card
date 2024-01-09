@@ -21,7 +21,7 @@
     "headers": {
         "Access-Control-Allow-Origin": "*"
       }},
-    { "src": "/", "status": 301, "headers": { "Location": "https://cyrxdzj.github.io/2021-07-07-HowToUseLuoguCard/" } }
+    { "src": "/", "status": 301, "headers": { "Location": "/" } }
   ],
   "regions": ["hkg1"]
 }
